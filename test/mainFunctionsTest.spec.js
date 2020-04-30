@@ -1,4 +1,5 @@
-const section = require('../lib/mainFunctions.js');
+const path = require('path');
+const section = require('../lib/mainFunctions');
 
 describe('Function pathAbsolute()', () => {
   it('Debería retornar false si la ruta es relativa', () => {
@@ -17,5 +18,15 @@ describe('Function getAbsolute()', () => {
 
   it('Debería retornar una ruta absoluta al pasarle una ruta absoluta', () => {
     expect(section.getAbsolute('/carpeta1/archivo5.md')).toBe('/carpeta1/archivo5.md');
+  });
+});
+
+describe('Function isFile()', () => {
+  it('Debería retornar true si es un archivo', () => {
+    expect(section.isFile(path.join(process.cwd(), 'test', 'test_container', 'archivo1.txt'))).toBe(true);
+  });
+
+  it('Debería retornar false si es un directorio', () => {
+    expect(section.isFile(path.join(process.cwd(), 'test', 'test_container'))).toBe(false);
   });
 });
