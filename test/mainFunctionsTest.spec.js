@@ -57,3 +57,9 @@ describe('Function getOnlyFilesMD()', () => {
     expect(section.getOnlyFilesMD(path.join(process.cwd(), 'lib'))).toEqual([]);
   });
 });
+
+describe('Function readDocumentMD()', () => {
+  it('Debería retornar el contenido del archivo', () => {
+    expect(section.readDocumentMD(path.join(process.cwd(), 'test', 'test_container', 'archivo1.txt'))).toEqual('Hola Soy Diana :)');
+  });
+});
