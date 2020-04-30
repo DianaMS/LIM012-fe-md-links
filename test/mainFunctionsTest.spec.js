@@ -47,3 +47,13 @@ describe('Function directoryNavigator()', () => {
     expect(section.directoryNavigator(path.join(process.cwd(), 'test', 'test_container'))).toEqual(data.arrayOutput);
   });
 });
+
+describe('Function getOnlyFilesMD()', () => {
+  it('Debería retornar un array con archivos .md', () => {
+    expect(section.getOnlyFilesMD(path.join(process.cwd(), 'test', 'test_container'))).toEqual(data.arrayOutputFilemd);
+  });
+
+  it('Debería retornar un array vacío al no encontrar archivos .md', () => {
+    expect(section.getOnlyFilesMD(path.join(process.cwd(), 'lib'))).toEqual([]);
+  });
+});
