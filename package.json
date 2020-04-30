@@ -4,7 +4,8 @@
   "description": "es una librería desarrollada con Node.js para validar links de archivos markdown",
   "main": "src/mdLinks.js",
   "dependencies": {
-    "marked": "^1.0.0"
+    "marked": "^1.0.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
