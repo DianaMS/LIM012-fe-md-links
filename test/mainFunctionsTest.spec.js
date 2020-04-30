@@ -30,3 +30,13 @@ describe('Function isFile()', () => {
     expect(section.isFile(path.join(process.cwd(), 'test', 'test_container'))).toBe(false);
   });
 });
+
+describe('Function fileExtension()', () => {
+  it('Debería retornar la extensión del archivo al encontrar el primer punto', () => {
+    expect(section.fileExtension('archivo4.md')).toBe('.md');
+  });
+
+  it('Debería retornar una cadena vacía al no encontrar el primer punto', () => {
+    expect(section.fileExtension('carpeta1')).toBe('');
+  });
+});
