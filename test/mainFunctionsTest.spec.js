@@ -9,3 +9,13 @@ describe('Function pathAbsolute()', () => {
     expect(section.pathAbsolute('/carpeta1/archivo5.md')).toBeTruthy();
   });
 });
+
+describe('Function getAbsolute()', () => {
+  it('Debería retornar una ruta absoluta al pasarle una ruta relativa', () => {
+    expect(section.getAbsolute('.')).toBe(process.cwd());
+  });
+
+  it('Debería retornar una ruta absoluta al pasarle una ruta absoluta', () => {
+    expect(section.getAbsolute('/carpeta1/archivo5.md')).toBe('/carpeta1/archivo5.md');
+  });
+});
