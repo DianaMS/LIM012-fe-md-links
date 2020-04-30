@@ -1,5 +1,6 @@
 const path = require('path');
 const section = require('../lib/mainFunctions');
+const data = require('./dataObj');
 
 describe('Function pathAbsolute()', () => {
   it('Debería retornar false si la ruta es relativa', () => {
@@ -7,7 +8,7 @@ describe('Function pathAbsolute()', () => {
   });
 
   it('Debería retornar true si la ruta es absoluta', () => {
-    expect(section.pathAbsolute('/carpeta1/archivo5.md')).toBeTruthy();
+    expect(section.pathAbsolute('/carpeta1/archivo5.md')).toBe(true);
   });
 });
 
@@ -38,5 +39,11 @@ describe('Function fileExtension()', () => {
 
   it('Debería retornar una cadena vacía al no encontrar el primer punto', () => {
     expect(section.fileExtension('carpeta1')).toBe('');
+  });
+});
+
+describe('Function directoryNavigator()', () => {
+  it('Debería retornar un array con el contenido del directorio', () => {
+    expect(section.directoryNavigator(path.join(process.cwd(), 'test', 'test_container'))).toEqual(data.arrayOutput);
   });
 });
