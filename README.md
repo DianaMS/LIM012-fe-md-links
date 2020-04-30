@@ -28,6 +28,13 @@ parsing,
 [npm-scripts](https://docs.npmjs.com/misc/scripts),
 [semver](https://semver.org/), ...
 
+
+## :white_check_mark: DIAGRAMA DE FLUJO
+
+<p align="center">
+  <img src="./img_readme/diagramaFlujo.png">
+</p>
+
 ## Consideraciones generales
 
 - Este proyecto se debe "resolver" de manera individual.
