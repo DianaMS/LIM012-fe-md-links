@@ -6,7 +6,19 @@ const arrayOutputFilemd = [path.join(process.cwd(), 'test', 'test_container', 'a
   path.join(process.cwd(), 'test', 'test_container', 'carpeta1', 'archivo5.md'),
   path.join(process.cwd(), 'test', 'test_container', 'carpeta1', 'carpeta2', 'archivo7.md')];
 
+const outputLinks = [
+  {
+    file: path.join(process.cwd(), 'test', 'test_container', 'archivo4.md'),
+    href: 'https://nodejs.org/',
+    text: 'Node.js',
+  }, {
+    file: path.join(process.cwd(), 'test', 'test_container', 'archivo4.md'),
+    href: 'https://nodejs.org/pe',
+    text: 'Node.js',
+  }];
+
 module.exports = {
   arrayOutput,
   arrayOutputFilemd,
+  outputLinks,
 };

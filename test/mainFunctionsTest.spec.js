@@ -63,3 +63,9 @@ describe('Function readDocumentMD()', () => {
     expect(section.readDocumentMD(path.join(process.cwd(), 'test', 'test_container', 'archivo1.txt'))).toEqual('Hola Soy Diana :)');
   });
 });
+
+describe('Function extractLinks()', () => {
+  it('Debería retornar un array de links encontrados en archivos .md', () => {
+    expect(section.extractLinks(path.join(process.cwd(), 'test', 'test_container'))).toEqual(data.outputLinks);
+  });
+});
