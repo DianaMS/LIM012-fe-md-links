@@ -15,3 +15,12 @@ describe('Function printLinks()', () => {
     expect(stats.printLinks([])).toBe('No se encontraron links en esa ruta');
   });
 });
+
+describe('Function printValidate()', () => {
+  it('Debería imprimir 5 propiedades "PATH", "LINK", "TEXT", "STATUS", "STATUS_MESSAGE"', () => {
+    expect(stats.printValidate(data.linksOutput)).toBe(data.printValidate);
+  });
+  it('Debería retornar "No se encontraron links en esa ruta" si no encuentra links', () => {
+    expect(stats.printLinks([])).toBe('No se encontraron links en esa ruta');
+  });
+});

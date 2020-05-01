@@ -47,6 +47,21 @@ const printLinksOutput = `
         TEXT: Node.js
         `;
 
+const printValidate = `
+        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+        LINK: https://nodejs.org/
+        TEXT: Node.js
+        STATUS_MESSAGE: ok
+        STATUS: 200
+        
+        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+        LINK: https://nodejs.org/pe
+        TEXT: Node.js
+        STATUS_MESSAGE: fail
+        STATUS: 404
+        `;
+
+
 module.exports = {
   arrayOutput,
   arrayOutputFilemd,
@@ -54,4 +69,5 @@ module.exports = {
   linksOutput,
   printStatsOutput,
   printLinksOutput,
+  printValidate,
 };
