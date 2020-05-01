@@ -10,3 +10,12 @@ describe('Function cliOptions', () => {
     });
   });
 });
+
+describe('Function cliOptions', () => {
+  it('Debería imprimir "total" y "unique" al ingresar la opción --stats', (done) => {
+    cliOptions(path.join(process.cwd(), 'test', 'test_container'), '--stats').then((elem) => {
+      expect(elem).toBe(data.printStatsOutput);
+      done();
+    });
+  });
+});
