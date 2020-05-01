@@ -32,10 +32,15 @@ const linksOutput = [
     statusMessage: 'fail',
   }];
 
+const printStatsOutput = `
+        Total: 2
+        Unique: 2
+    `;
 
 module.exports = {
   arrayOutput,
   arrayOutputFilemd,
   outputLinks,
   linksOutput,
+  printStatsOutput,
 };
