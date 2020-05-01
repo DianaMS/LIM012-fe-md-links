@@ -19,3 +19,19 @@ describe('Function cliOptions', () => {
     });
   });
 });
+
+describe('Function cliOptions', () => {
+  it('Debería imprimir "total", "unique" y "broken" al ingresar la opción --stats --validate', (done) => {
+    cliOptions(path.join(process.cwd(), 'test', 'test_container'), '--stats --validate').then((elem) => {
+      expect(elem).toMatch('');
+      done();
+    });
+  });
+
+  it('Debería imprimir "total", "unique" y "broken" al ingresar la opción --validate --stats', (done) => {
+    cliOptions(path.join(process.cwd(), 'test', 'test_container'), '--validate --stats').then((elem) => {
+      expect(elem).toMatch('');
+      done();
+    });
+  });
+});
