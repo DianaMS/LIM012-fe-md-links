@@ -17,8 +17,25 @@ const outputLinks = [
     text: 'Node.js',
   }];
 
+const linksOutput = [
+  {
+    file: path.join(process.cwd(), 'test', 'test_container', 'archivo4.md'),
+    href: 'https://nodejs.org/',
+    text: 'Node.js',
+    status: 200,
+    statusMessage: 'ok',
+  }, {
+    file: path.join(process.cwd(), 'test', 'test_container', 'archivo4.md'),
+    href: 'https://nodejs.org/pe',
+    text: 'Node.js',
+    status: 404,
+    statusMessage: 'fail',
+  }];
+
+
 module.exports = {
   arrayOutput,
   arrayOutputFilemd,
   outputLinks,
+  linksOutput,
 };
