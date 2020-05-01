@@ -37,10 +37,21 @@ const printStatsOutput = `
         Unique: 2
     `;
 
+const printLinksOutput = `
+        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+        LINK: https://nodejs.org/
+        TEXT: Node.js
+        
+        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+        LINK: https://nodejs.org/pe
+        TEXT: Node.js
+        `;
+
 module.exports = {
   arrayOutput,
   arrayOutputFilemd,
   outputLinks,
   linksOutput,
   printStatsOutput,
+  printLinksOutput,
 };
