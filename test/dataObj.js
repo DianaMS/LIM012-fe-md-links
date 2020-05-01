@@ -47,7 +47,7 @@ const printLinksOutput = `
         TEXT: Node.js
         `;
 
-const printValidate = `
+const printValidateOutput = `
         PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
         LINK: https://nodejs.org/
         TEXT: Node.js
@@ -69,5 +69,5 @@ module.exports = {
   linksOutput,
   printStatsOutput,
   printLinksOutput,
-  printValidate,
+  printValidateOutput,
 };

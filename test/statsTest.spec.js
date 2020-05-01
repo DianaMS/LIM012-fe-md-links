@@ -18,9 +18,12 @@ describe('Function printLinks()', () => {
 
 describe('Function printValidate()', () => {
   it('Debería imprimir 5 propiedades "PATH", "LINK", "TEXT", "STATUS", "STATUS_MESSAGE"', () => {
-    expect(stats.printValidate(data.linksOutput)).toBe(data.printValidate);
+    expect(stats.printValidate(data.linksOutput)).toBe(data.printValidateOutput);
   });
-  it('Debería retornar "No se encontraron links en esa ruta" si no encuentra links', () => {
-    expect(stats.printLinks([])).toBe('No se encontraron links en esa ruta');
+});
+
+describe('Function printStatsandValidate()', () => {
+  it('Debería imprimir el Total, Unique y Broken de links totales', () => {
+    expect(stats.printStatsandValidate(data.linksOutput)).toMatch('');
   });
 });
