@@ -37,7 +37,10 @@ describe('Function cliOptions', () => {
 });
 
 describe('Function cliOptions', () => {
-  it('Debería imprimir 3 propiedades "PATH", "LINK", "TEXT" al ingresar al no ingresar la opción', () => {
-    expect(cliOptions(path.join(process.cwd(), 'test', 'test_container'))).toBe(data.printLinksOutput);
+  it('Debería imprimir 3 propiedades "PATH", "LINK", "TEXT" al no ingresar la opción', (done) => {
+    cliOptions(path.join(process.cwd(), 'test', 'test_container')).then((elem) => {
+      expect(elem).toBe(data.printLinksOutput);
+      done();
+    });
   });
 });
