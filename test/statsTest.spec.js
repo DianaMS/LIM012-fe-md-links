@@ -20,6 +20,9 @@ describe('Function printValidate()', () => {
   it('Debería imprimir 5 propiedades "PATH", "LINK", "TEXT", "STATUS", "STATUS_MESSAGE"', () => {
     expect(stats.printValidate(data.linksOutput)).toBe(data.printValidateOutput);
   });
+  it('Debería retornar "No se encontraron links en esa ruta" si no encuentra links', () => {
+    expect(stats.printValidate([])).toBe('No se encontraron links en esa ruta');
+  });
 });
 
 describe('Function printStatsandValidate()', () => {
