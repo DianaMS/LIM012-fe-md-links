@@ -1,4 +1,5 @@
 const path = require('path');
+const chalk = require('chalk');
 
 const arrayOutput = ['archivo1.txt', 'archivo2.js', 'archivo3.html', 'archivo4.md', 'carpeta1'];
 
@@ -33,32 +34,32 @@ const linksOutput = [
   }];
 
 const printStatsOutput = `
-        Total: 2
-        Unique: 2
+        ${chalk.rgb(252, 91, 96)('Total:')} 2
+        ${chalk.rgb(252, 91, 96)('Unique:')} 2
     `;
 
 const printLinksOutput = `
-        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
-        LINK: https://nodejs.org/
-        TEXT: Node.js
+        ${chalk.grey('PATH:')} ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+        ${chalk.grey('LINK:')} https://nodejs.org/
+        ${chalk.grey('TEXT:')} Node.js
         
-        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
-        LINK: https://nodejs.org/pe
-        TEXT: Node.js
+        ${chalk.grey('PATH:')} ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+        ${chalk.grey('LINK:')} https://nodejs.org/pe
+        ${chalk.grey('TEXT:')} Node.js
         `;
 
 const printValidateOutput = `
-        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
-        LINK: https://nodejs.org/
-        TEXT: Node.js
-        STATUS_MESSAGE: ok
-        STATUS: 200
+          ${chalk.grey('PATH:')} ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+          ${chalk.grey('LINK:')} https://nodejs.org/
+          ${chalk.grey('TEXT:')} Node.js
+          ${chalk.cyan('STATUS_MESSAGE:')} ${chalk.bold.green('ok')}
+          ${chalk.cyan('STATUS:')} 200
         
-        PATH: ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
-        LINK: https://nodejs.org/pe
-        TEXT: Node.js
-        STATUS_MESSAGE: fail
-        STATUS: 404
+          ${chalk.grey('PATH:')} ${path.join(process.cwd(), 'test', 'test_container', 'archivo4.md')}
+          ${chalk.grey('LINK:')} https://nodejs.org/pe
+          ${chalk.grey('TEXT:')} Node.js
+          ${chalk.cyan('STATUS_MESSAGE:')} ${chalk.bold.red('fail')}
+          ${chalk.cyan('STATUS:')} 404
         `;
 
 
