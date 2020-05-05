@@ -9,9 +9,10 @@
   <img src="https://img.shields.io/badge/test--coverage-100%25-green">
   <img src="https://img.shields.io/badge/license-MIT-blue">
   <img src="https://img.shields.io/badge/version-1.0.0-yellow">
-  <img src="https://img.shields.io/badge/dependencies-3-ff6347>
-
+  <img src="https://img.shields.io/badge/dependencies-3-ff6347">
 </p>
+
+
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
 manejan texto plano (GitHub, foros, blogs, ...), y es muy común
