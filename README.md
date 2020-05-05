@@ -1,4 +1,3 @@
-# :computer: :exclamation: Markdown Links
 
 <p align="center">
   <img src="./img_readme/md-links1.png">
@@ -6,9 +5,10 @@
 
 
 <p align="center">
+  <img src="https://img.shields.io/github/issues/DianaMS/LIM012-fe-md-links">
   <img src="https://img.shields.io/badge/test--coverage-100%25-green">
   <img src="https://img.shields.io/badge/license-MIT-blue">
-  <img src="https://img.shields.io/badge/version-1.0.0-yellow">
+    <img src="https://img.shields.io/badge/version-1.0.0-ff1567">
   <img src="https://img.shields.io/badge/dependencies-3-ff6347">
 </p>
 
