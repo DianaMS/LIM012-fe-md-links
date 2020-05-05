@@ -47,6 +47,18 @@ parsing,
   <img src="./img_readme/diagramaFlujo.png">
 </p>
 
+## :white_check_mark: INSTALACIÓN
+
+.Global
+~~~
+npm install -g dianams-md-links
+~~~
+
+.Local
+~~~
+npm install dianams-md-links
+~~~
+
 ## Consideraciones generales
 
 - Este proyecto se debe "resolver" de manera individual.
