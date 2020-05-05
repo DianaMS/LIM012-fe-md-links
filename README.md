@@ -8,8 +8,11 @@
   <img src="https://img.shields.io/github/issues/DianaMS/LIM012-fe-md-links">
   <img src="https://img.shields.io/badge/test--coverage-100%25-green">
   <img src="https://img.shields.io/badge/license-MIT-blue">
-    <img src="https://img.shields.io/badge/version-1.0.0-ff1567">
+  <img src="https://img.shields.io/badge/npm-v1.0.4-ff1567">
   <img src="https://img.shields.io/badge/dependencies-3-ff6347">
+  <img src="https://img.shields.io/badge/Unpacked%20Size-200%20kB-ff3815">
+  
+
 </p>
 
 
@@ -43,6 +46,19 @@ parsing,
 <p align="center">
   <img src="./img_readme/diagramaFlujo.png">
 </p>
+
+## :white_check_mark: INSTALACIÓN
+
+.Global
+~~~
+npm install -g dianams-md-links
+~~~
+
+.Local
+~~~
+npm install dianams-md-links
+~~~
+
 
 ## Consideraciones generales
 
