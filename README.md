@@ -49,15 +49,70 @@ parsing,
 
 ## :white_check_mark: INSTALACIÓN
 
-.Global
-~~~
+**-Global**
+```js
 npm install -g dianams-md-links
-~~~
+```
 
-.Local
-~~~
+**-Local**
+```js
 npm install dianams-md-links
-~~~
+```
+
+## :white_check_mark: GUÍA DE USO
+
+### :large_blue_circle: Utilízalo como módulo:
+
+```js
+const mdLinks = require('dianams-md-links');
+```
+#### Ejemplo:
+
+```js
+const mdLinks = require("md-links");
+
+mdLinks("./some/example.md")
+  .then(links => {
+    // => [{ href, text, file }]
+  })
+  .catch(console.error);
+
+mdLinks("./some/example.md", { validate: true })
+  .then(links => {
+    // => [{ href, text, file, status, ok }]
+  })
+  .catch(console.error);
+
+mdLinks("./some/dir")
+  .then(links => {
+    // => [{ href, text, file }]
+  })
+  .catch(console.error);
+```
+
+### :large_blue_circle: Utilízalo a través de la Línea de Comandos:
+
+`md-links <path-to-file> [options]`
+
+#### Ejemplo:
+
+```sh
+$ md-links ./some/example.md
+./some/example.md http://algo.com/2/3/ Link a algo
+./some/example.md https://otra-cosa.net/algun-doc.html algún doc
+./some/example.md http://google.com/ Google
+```
+
+```sh
+$ md-links ./some/example.md --stats
+Total: 3
+Unique: 3
+```
+
+
+
+
+
 
 
 ## Consideraciones generales
