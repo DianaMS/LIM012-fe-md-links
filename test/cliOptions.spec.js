@@ -38,8 +38,17 @@ describe('Function cliOptions', () => {
 
 describe('Function cliOptions', () => {
   it('Debería imprimir 3 propiedades "PATH", "LINK", "TEXT" al no ingresar la opción', (done) => {
-    cliOptions(path.join(process.cwd(), 'test', 'test_container')).then((elem) => {
+    cliOptions(path.join(process.cwd(), 'test', 'test_container'), '').then((elem) => {
       expect(elem).toBe(data.printLinksOutput);
+      done();
+    });
+  });
+});
+
+describe('Function cliOptions', () => {
+  it('Debería imprimir un mensaje de opciones válidas al ingresar una opción no válida', (done) => {
+    cliOptions(path.join(process.cwd(), 'test', 'test_container'), '--NoEsOpcionValida').then((elem) => {
+      expect(elem).toBe(data.help);
       done();
     });
   });
