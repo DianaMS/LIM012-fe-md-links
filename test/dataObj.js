@@ -62,6 +62,17 @@ const printValidateOutput = `
           ${chalk.cyan('STATUS:')} 404
         `;
 
+const help = `
+----------------------------Valid Arguments----------------------------
+
+${chalk.yellow.inverse('Option1:')} md-links <path-to-file>
+${chalk.yellow.inverse('Option2:')} md-links <path-to-file> --validate
+${chalk.yellow.inverse('Option3:')} md-links <path-to-file> --stats
+${chalk.yellow.inverse('Option4:')} md-links <path-to-file> (--stas --validate || --validate --stas)
+
+------------------------------------------------------------------------
+`;
+
 
 module.exports = {
   arrayOutput,
@@ -71,4 +82,5 @@ module.exports = {
   printStatsOutput,
   printLinksOutput,
   printValidateOutput,
+  help,
 };
