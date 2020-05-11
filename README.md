@@ -111,9 +111,13 @@ Unique: 3
 
 ## :white_check_mark: USANDO MD-LINKS EN LA LÍNEA DE COMANDOS
 
-### En el cmd de Windows
+### :large_blue_circle: En el CMD de Windows
+
+`md-links <path-to-file> [options]`
 
 **- Ingresando solo md-links**
+
+Nos retorna un mensaje con las opciones válidas para ejecutar sin errores y conseguir una salida esperada.
 
 <p align="center">
   <img src="./img_readme/cli1.JPG">
@@ -121,9 +125,64 @@ Unique: 3
 
 **- Ingresando solo md-links y una ruta que no existe**
 
+Nos retorna un mensaje de ERROR, describiéndonos que la ruta ingresada no la encuentra.
+
 <p align="center">
   <img src="./img_readme/cli2.JPG">
 </p>
+
+**- Ingresando solo md-links y una ruta válida (absoluta o relativa)**
+
+Retorna los links encontrados en la ruta dada, la ruta donde fueron hallados los links y el texto que los identifica.
+
+<p align="center">
+  <img src="./img_readme/cli3.JPG">
+</p>
+
+**- Ingresando solo md-links, una ruta válida y la opción --validate**
+
+Retorna los links encontrados en la ruta dada, la ruta donde fueron hallados los links, el texto que los identifica, un mensaje dependiendo su respuesta HTTP y el código de estado HTTP.
+
+<p align="center">
+  <img src="./img_readme/cli4.JPG">
+</p>
+
+**- Ingresando solo md-links, una ruta válida y la opción --stats**
+
+Retorna estadísticas básicas según los links encontrados: Total de links encontrados, y total de links únicos.
+
+<p align="center">
+  <img src="./img_readme/cli5.JPG">
+</p>
+
+**- Ingresando solo md-links, una ruta válida y la opción --stats --validate y viceversa**
+
+Retorna estadísticas básicas según los links encontrados: Total de links encontrados, total de links únicos y links rotos.
+
+<p align="center">
+  <img src="./img_readme/cli6.JPG">
+</p>
+
+**- Ingresando solo md-links, una ruta válida y una opción no válida**
+
+Nos retorna un mensaje con las opciones válidas para ejecutar sin errores y conseguir una salida esperada.
+
+<p align="center">
+  <img src="./img_readme/cli7.JPG">
+</p>
+
+### :large_blue_circle: En la terminal de Ubuntu en Windows
+
+`md-links <path-to-file> [options]`
+
+**- Igualmente podemos probar todas las opciones anteriores en ésta otra terminal**
+
+<p align="center">
+  <img src="./img_readme/ubuntu.JPG">
+</p>
+
+## :white_check_mark: USANDO LIBRERÍA MD-LINKS DESPUÉS DE PUBLICAR EN NPM
+
 
 
 ## :white_check_mark: OBJETIVOS DE APRENDIZAJE
