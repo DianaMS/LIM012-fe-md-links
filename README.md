@@ -8,9 +8,9 @@
   <img src="https://img.shields.io/github/issues/DianaMS/LIM012-fe-md-links">
   <img src="https://img.shields.io/badge/test--coverage-100%25-green">
   <img src="https://img.shields.io/badge/license-MIT-blue">
-  <img src="https://img.shields.io/badge/version-1.0.5-e30052">
+  <img src="https://img.shields.io/badge/npm-v1.0.6-e30052">
   <img src="https://img.shields.io/badge/dependencies-3-ff6347">
-  <img src="https://img.shields.io/badge/Unpacked%20Size-200%20kB-ff3815">
+  <img src="https://img.shields.io/badge/Unpacked%20Size-591%20kB-ff8000">
   
 
 </p>
