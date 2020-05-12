@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/issues/DianaMS/LIM012-fe-md-links">
   <img src="https://img.shields.io/badge/test--coverage-100%25-green">
   <img src="https://img.shields.io/badge/license-MIT-blue">
-  <img src="https://img.shields.io/badge/npm-v1.0.4-ff1567">
+  <img src="https://img.shields.io/badge/version-1.0.5-e30052">
   <img src="https://img.shields.io/badge/dependencies-3-ff6347">
   <img src="https://img.shields.io/badge/Unpacked%20Size-200%20kB-ff3815">
   
@@ -195,17 +195,17 @@ Nos retorna un mensaje con las opciones válidas para ejecutar sin errores y con
   <img src="./img_readme/true.JPG">
 </p>
 
-**1- Requerimos la librería y la guardamos en una variable p.e mdLinks**
-**2- Llamamos esa variable creada y le añadimos dos argumentos, path y validate:true**
-**3- Mostramos en consola lo que nos retorna la librería al probarla**
+**1. Requerimos la librería y la guardamos en una variable p.e mdLinks**
+**2. Llamamos esa variable creada y le añadimos dos argumentos, path y validate:true**
+**3. Mostramos en consola lo que nos retorna la librería al probarla que es un array de objetos con cinco propiedades**
 
 <p align="center">
   <img src="./img_readme/false.JPG">
 </p>
 
-**1- Requerimos la librería y la guardamos en una variable p.e mdLinks**
-**2- Llamamos esa variable creada y le añadimos dos argumentos, path y validate:false**
-**3- Mostramos en consola lo que nos retorna la librería al probarla**
+**1. Requerimos la librería y la guardamos en una variable p.e mdLinks**
+**2. Llamamos esa variable creada y le añadimos dos argumentos, path y validate:false**
+**3. Mostramos en consola lo que nos retorna la librería al probarla, que es un array de objetos con tres propiedades**
 
 
 ## :white_check_mark: OBJETIVOS DE APRENDIZAJE
