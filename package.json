@@ -1,7 +1,7 @@
 {
   "name": "dianams-md-links",
-  "version": "1.0.4",
-  "description": "es una librería desarrollada en el entorno Node.js para validar links de archivos markdown",
+  "version": "1.0.6",
+  "description": "es una librería desarrollada con Node.js para validar links de archivos markdown",
   "main": "lib/mdLinks.js",
   "dependencies": {
     "chalk": "^4.0.0",
