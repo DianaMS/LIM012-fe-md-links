@@ -183,6 +183,29 @@ Nos retorna un mensaje con las opciones válidas para ejecutar sin errores y con
 
 ## :white_check_mark: USANDO LIBRERÍA MD-LINKS DESPUÉS DE PUBLICAR EN NPM
 
+**-Instalamos el módulo dianams-md-links publicada en npm**
+
+<p align="center">
+  <img src="./img_readme/npm.JPG">
+</p>
+
+**Usando la Librería**
+
+<p align="center">
+  <img src="./img_readme/true.JPG">
+</p>
+
+**1- Requerimos la librería y la guardamos en una variable p.e mdLinks**
+**2- Llamamos esa variable creada y le añadimos dos argumentos, path y validate:true**
+**3- Mostramos en consola lo que nos retorna la librería al probarla**
+
+<p align="center">
+  <img src="./img_readme/false.JPG">
+</p>
+
+**1- Requerimos la librería y la guardamos en una variable p.e mdLinks**
+**2- Llamamos esa variable creada y le añadimos dos argumentos, path y validate:false**
+**3- Mostramos en consola lo que nos retorna la librería al probarla**
 
 
 ## :white_check_mark: OBJETIVOS DE APRENDIZAJE
